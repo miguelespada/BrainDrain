@@ -21,13 +21,15 @@
 	
 	echo '<br>[PHP] fields: '.$fields;
 	echo '<br>[PHP] values: '.$values;
-	$query = "INSERT INTO Brains ".$fields."VALUES ". $values;
+
+	$query = "INSERT INTO Brains ".$fields."VALUES ".$values;
 	
 	$results = $bd->exec($query);
+
 	if($results)
-		echo "<br> [SQLite] One row inserted";
+		echo "<br> [SQL] One row inserted";
 	else
-		echo "<br> [SQLite] Something wrong happend";
+		echo "<br> [SQL] Something wrong happend";
 
 	// Updating JSON script
 	echo "<br> [PYTHON] ";

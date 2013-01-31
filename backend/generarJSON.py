@@ -7,7 +7,8 @@ import sys
 import json
 import time
 
-REFRESH = 30
+# Number of seconds between refresh json file 
+REFRESH = 30 
 
 try:
     lastModification = os.path.getmtime("brains.json")
