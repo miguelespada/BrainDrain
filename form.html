@@ -102,8 +102,7 @@ function afterForm(responseText, statusText, xhr, $form)  {
                     <option value="ciencias">Ciencias: física, matemáticas, biológicas,...</option>
                     <option value="otras">Otras,...</option>
                    </select>
-        <li id = "mensaje"> Mensaje: <input type="text" name="mensaje" /> </li>
-    </li>
+        <li > Mensaje: <span id = "msgHead"> </span> <input id = "mensaje" type="text" name="mensaje" /> 
     <li><input id="submit" type="submit" value="Submit Comment" /> </li>
     </ul>
     <div id="result"> <div>
@@ -112,7 +111,7 @@ function afterForm(responseText, statusText, xhr, $form)  {
 
 var origen = {
     target : $('#output1'),
-    name : '',
+    name : '...',
     address : '',
     lat : null,
     lon : null,
@@ -121,15 +120,25 @@ var origen = {
 
 var destino = {
     target : $('#output2'),
-    name : '',
+    name : '...',
     address : '',
     lat : null,
     lon : null,
     isSpain : null
 };
+var msgHead = "";
+createMsg();
 
-var destino 
-function showAddress(location, target) {
+function createMsg(){
+    msgHead = "Me fui de " + origen.name +" a " + destino.name + " porque ";
+    $('#msgHead').html(msgHead);
+    var len = 140 - msgHead.length;
+    $('#mensaje').attr("size", len);
+    $('#mensaje').attr("maxlength", len);
+}
+
+
+function checkAddress(location, target) {
   var str = "";
   var inSpain = -1;
   if(location == "") return;
@@ -144,23 +153,28 @@ function showAddress(location, target) {
             target.inSpain = results[0].formatted_address.indexOf("Spain") != -1;
             target.lat = parseInt(latlng.lat() * 10);
             target.lon = parseInt(latlng.lng() * 10);
+
+            createMsg();
         } else {
-          str = "No hay resultados";
+          console.log("No hay resultados");
         }
       } else {
-        str = "Error en geolocalización: " + status;
+        console.log("Error en geolocalización: " + status);
       }
       target.target.html(target.address)
     });
 
   }
 }
+
 $('#origen').blur(function() {
-        showAddress($('#origen').val(), origen);
+        checkAddress($('#origen').val(), origen);
+
 });
 $('#destino').blur(function() {
-        showAddress($('#destino').val(), destino);
+        checkAddress($('#destino').val(), destino);
 });
+
 </script>
 </body>
 </html>
