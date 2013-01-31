@@ -47,7 +47,7 @@ function prevForm(formData, jqForm, options) {
         return false;
     }
 
-    $('#submit').attr("disabled", "disabled");
+   // $('#submit').attr("disabled", "disabled");
     return true; 
 } 
   
@@ -153,7 +153,7 @@ function checkAddress(location, target) {
             target.inSpain = results[0].formatted_address.indexOf("Spain") != -1;
             target.lat = parseInt(latlng.lat() * 10);
             target.lon = parseInt(latlng.lng() * 10);
-
+            target.target.html(target.address);
             createMsg();
         } else {
           console.log("No hay resultados");
@@ -161,7 +161,6 @@ function checkAddress(location, target) {
       } else {
         console.log("Error en geolocalización: " + status);
       }
-      target.target.html(target.address)
     });
 
   }

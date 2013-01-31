@@ -1,5 +1,5 @@
-Hello, insertion test in sqlite.
 <?php
+	
 	$bd = new SQLite3('brains.db');
 	
 	$origen = $_POST["origen"];
@@ -9,13 +9,17 @@ Hello, insertion test in sqlite.
 	$mensaje = $_POST["mensaje"];
 
 	$ip=$_SERVER['REMOTE_ADDR']; 
-	echo '<b>IP Address= '.$ip.'</b>';
+	echo '[PHP] IP:'.$ip;
 
 	$query = "INSERT INTO Brains VALUES ('$ip', '$origen', '$destino', '$fecha', '$profesion', '$mensaje')";
 	
 	$results = $bd->exec($query);
 	if($results)
-		echo "One row inserted";
+		echo "<br> [SQLite] One row inserted";
 	else
-		echo "Something wrong happend";
+		echo "<br> [SQLite] Something wrong happend";
+
+	// Updating JSON script
+	echo "<br> [PYTHON] ";
+	echo exec("./db.py");
 ?>
