@@ -7,54 +7,67 @@
     <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
  
     <script> 
+        var userHasSubmited = false;
         $(document).ready(function() { 
-     var options = { 
-        target:        '#result'   // target element(s) to be updated with server response 
-        //beforeSubmit:  showRequest,  // pre-submit callback 
-        //success:       showResponse  // post-submit callback 
- 
-        // other available options: 
-        //url:       url         // override for form's 'action' attribute 
-        //type:      type        // 'get' or 'post', override for form's 'method' attribute 
-        //dataType:  null        // 'xml', 'script', or 'json' (expected server response type) 
-        //clearForm: true        // clear all form fields after successful submit 
-        //resetForm: true        // reset the form after successful submit 
- 
-        // $.ajax options can be used here too, for example: 
-        //timeout:   3000 
-        }; 
 
-        $('#myForm').ajaxForm(options); 
+         var options = { 
+            target:        '#result',   // target element(s) to be updated with server response 
+            beforeSubmit:  prevForm,  // pre-submit callback 
+            success:  afterForm  // post-submit callback 
+         }; 
+
+         $('#myForm').ajaxForm(options); 
     }); 
  
 // pre-submit callback 
-function showRequest(formData, jqForm, options) { 
+function prevForm(formData, jqForm, options) { 
+
+    //(1) Check rest of the form fields.
+    //(2) Insert data in the local db
+    //(3) Async write in the remote db
+
+    console.log("checking form... ")
+    if(userHasSubmited  // Don't allow multiple inserts in the same session 
+    || origen.lat == null 
+    || origen.lon == null 
+    || destino.lat == null 
+    || destino.lon == null
+    || !origen.inSpain
+    || destino.inSpain) return false;
+
+
     return true; 
 } 
- 
-// post-submit callback 
-function showResponse(responseText, statusText, xhr, $form)  { 
+  
+function afterForm(responseText, statusText, xhr, $form)  {
+    console.log(responseText); 
+    userHasSummited = true;
+    $('#myForm')
+
 } 
 
-    </script> 
+</script> 
+
 </head> 
 
 <body>
 <form id="myForm" action="backend/insert.php" method="post"> 
     <ul>
-    <li>Origen: <input id="origen" type="text" name="origen"/> <span id="output1"> </span>
+    <li>Origen: <input id="origen" type="text" name="origen" required/> <span id="output1"> </span>
  </li>
-    <li>Destino: <input id="destino" type="text" name="destino" /> <span id="output2"> </span> </li>
-    <li>Fecha: <select name="fecha">
-                    <option value="2007">2007</li>
-                    <option value="2008">2008</li>
-                    <option value="2009">2009</li>
-                    <option value="2010">2010</li>
-                    <option value="2011">2011</li>
-                    <option value="2012">2012</li>
-                    <option value="2013">2013</li>
+    <li>Destino: <input id="destino" type="text" name="destino" required/> <span id="output2"> </span> </li>
+    <li>Fecha: <select id="fecha" name="fecha" required>
+                    <option value="" selected>
+                    <option value="2007">2007
+                    <option value="2008">2008
+                    <option value="2009">2009
+                    <option value="2010">2010
+                    <option value="2011">2011
+                    <option value="2012">2012
+                    <option value="2013">2013
                 </select>
-    <li>Profesion: <select name="profesion">
+    <li>Profesion: <select id="profesion" name="profesion" required>
+                    <option value="" selected>
                     <option value="sociales">Ciencias Sociales y Jurídicas: derecho, económicas, empresariales, turismo,...</option>
                     <option value="artes">Artes: Bellas artes, diseño, artes performativas, cine,...</option>
                     <option value="ingenierias">Ingenierías y arquitectura: informática, telecomunicaciones,...</option>
@@ -71,6 +84,25 @@ function showResponse(responseText, statusText, xhr, $form)  {
 </form>
 <script>
 
+var origen = {
+    target : $('#output1'),
+    name : '',
+    address : '',
+    lat : null,
+    lon : null,
+    isSpain : null
+};
+
+var destino = {
+    target : $('#output2'),
+    name : '',
+    address : '',
+    lat : null,
+    lon : null,
+    isSpain : null
+};
+
+var destino 
 function showAddress(location, target) {
   var str = "";
   var inSpain = -1;
@@ -81,28 +113,27 @@ function showAddress(location, target) {
       if (status == google.maps.GeocoderStatus.OK) {
         if (status != google.maps.GeocoderStatus.ZERO_RESULTS) {
             var latlng = new google.maps.LatLng(results[0].geometry.location.lat(), results[0].geometry.location.lng() );
-            str = results[0].formatted_address;
-            inSpain = results[0].formatted_address.indexOf("Spain") != -1;
-            if(inSpain) str+= " sí está en España. ";
-            else str+= " no está en España. "
-            str += " <strong>Lat:</strong> "+ parseInt(latlng.lat() * 10);
-            str += " <strong>Lng:</strong> "+ parseInt(latlng.lng() * 10);
+            target.name = location;
+            target.address = results[0].formatted_address;
+            target.inSpain = results[0].formatted_address.indexOf("Spain") != -1;
+            target.lat = parseInt(latlng.lat() * 10);
+            target.lon = parseInt(latlng.lng() * 10);
         } else {
           str = "No hay resultados";
         }
       } else {
         str = "Error en geolocalización: " + status;
       }
-      target.html(str)
+      target.target.html(target.address)
     });
 
   }
 }
 $('#origen').blur(function() {
-        showAddress($('#origen').val(), $('#output1'));
+        showAddress($('#origen').val(), origen);
 });
 $('#destino').blur(function() {
-        showAddress($('#destino').val(), $('#output2'));
+        showAddress($('#destino').val(), destino);
 });
 </script>
 </body>
