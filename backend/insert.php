@@ -1,5 +1,4 @@
 <?php
-	
 	$bd = new SQLite3('brains.db');
 	
 	$origen = $_POST["origen"];
@@ -14,9 +13,14 @@
 	$mensaje = $_POST["mensaje"];
 
 	$ip=$_SERVER['REMOTE_ADDR']; 
-	echo '[PHP] IP:'.$ip;
 
-	$query = "INSERT INTO Brains VALUES ('$ip', '$origen', '$destino', '$fecha', '$profesion', '$mensaje')";
+	$fields = "(ip, src, latSrc, lonSrc, dst, latDst, lonDst, year, month, prof, msg, time)";
+
+	$values = "('$ip', '$origen', '$latO', '$lonO', '$destino', '$latD', '$lonD', 
+				'$year', '$month', '$profesion', '$mensaje', ".time().")";
+	
+	echo '<br>[PHP] values: '.$values;
+	$query = "INSERT INTO Brains ".$fields."VALUES ". $values;
 	
 	$results = $bd->exec($query);
 	if($results)
