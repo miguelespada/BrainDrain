@@ -31,9 +31,9 @@ function prevForm(formData, jqForm, options) {
     var d = new Date();
     if(userHasSubmited) 
         err = "[ERROR] Multiples envíos";  // Don't allow multiple inserts in the same session 
-    else if(origen.lat === null || origen.lon === null) 
+    else if(origen.address === '')
         err = "[ERROR] Datos de origen incorrectos";
-    else if(destino.lat === null || destino.lon === null) 
+    else if(destino.address === '')
         err = "[ERROR] Datos de destino incorrectos";
     else if(!origen.inSpain) 
         err = "[ERROR] El origen no está en España";
@@ -41,6 +41,8 @@ function prevForm(formData, jqForm, options) {
         err = "[ERROR] El destino está en España";
     else if(formData[2].value > d.getMonth() + 1 && formData[3].value >= d.getFullYear()) 
         err = "[ERROR] Fecha no válida";
+
+    formData[9].value = msgHead + formData[9].value;
 
     if(err != "") {
         alert(err);
@@ -54,7 +56,6 @@ function prevForm(formData, jqForm, options) {
 function afterForm(responseText, statusText, xhr, $form)  {
     userHasSummited = true;
     $('#myForm')
-
 } 
 
 </script> 
@@ -64,9 +65,15 @@ function afterForm(responseText, statusText, xhr, $form)  {
 <body>
 <form id="myForm" action="backend/insert.php" method="post"> 
     <ul>
-    <li>Origen: <input id="origen" type="text" name="origen" value="Madrid" required/>  <span id="output1"> </span>
+    <li>Origen: <input id="origen" type="text" name="origen" value="Madrid" required/>  
+        Lat: <input id="latO" type="text" name="latO" value="---"/>
+        Lon: <input id="lonO" type="text" name="lonO" value="---"/>
+        <span id="output1"> </span>
  </li>
-    <li>Destino: <input id="destino" type="text" name="destino" value="Paris"  required/> <span id="output2"> </span> </li>
+    <li>Destino: <input id="destino" type="text" name="destino" value="Paris"  required/> 
+        Lat: <input id="latD" type="text" name="latD" value="---"/>
+        Lon: <input id="lonD" type="text" name="lonD" value="---"/>
+        <span id="output2"> </span> 
         <li>Mes: <select id="month" name="month"   required>
                     <option value="" >
                     <option value=1>Enero
@@ -113,8 +120,8 @@ var origen = {
     target : $('#output1'),
     name : '...',
     address : '',
-    lat : null,
-    lon : null,
+    lat : $('#latO'),
+    lon : $('#lonO'),
     isSpain : null
 };
 
@@ -122,8 +129,8 @@ var destino = {
     target : $('#output2'),
     name : '...',
     address : '',
-    lat : null,
-    lon : null,
+    lat : $('#latD'),
+    lon : $('#lonD'),
     isSpain : null
 };
 var msgHead = "";
@@ -151,8 +158,8 @@ function checkAddress(location, target) {
             target.name = location;
             target.address = results[0].formatted_address;
             target.inSpain = results[0].formatted_address.indexOf("Spain") != -1;
-            target.lat = parseInt(latlng.lat() * 10);
-            target.lon = parseInt(latlng.lng() * 10);
+            target.lat.attr("value", parseInt(latlng.lat() * 10));
+            target.lon.attr("value", parseInt(latlng.lng() * 10));
             target.target.html(target.address);
             createMsg();
         } else {

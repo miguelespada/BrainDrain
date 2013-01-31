@@ -4,7 +4,12 @@
 	
 	$origen = $_POST["origen"];
 	$destino = $_POST["destino"];
-	$fecha = $_POST["fecha"];
+	$lonO = $_POST["lonO"];
+	$latO = $_POST["latO"];
+	$lonD = $_POST["lonD"];
+	$latD = $_POST["latD"];
+	$month = $_POST["month"];
+	$year = $_POST["year"];
 	$profesion = $_POST["profesion"];
 	$mensaje = $_POST["mensaje"];
 
@@ -21,5 +26,5 @@
 
 	// Updating JSON script
 	echo "<br> [PYTHON] ";
-	echo exec("./db.py");
+	echo exec("./generarJSON.py");
 ?>
