@@ -9,7 +9,7 @@
     <script> 
         $(document).ready(function() { 
      var options = { 
-        target:        '#output1'   // target element(s) to be updated with server response 
+        target:        '#result'   // target element(s) to be updated with server response 
         //beforeSubmit:  showRequest,  // pre-submit callback 
         //success:       showResponse  // post-submit callback 
  
@@ -40,23 +40,41 @@ function showResponse(responseText, statusText, xhr, $form)  {
 </head> 
 
 <body>
-<form id="myForm" action="test.php" method="post"> 
+<form id="myForm" action="backend/insert.php" method="post"> 
     <ul>
-    <li>Origen: <input id="origen" type="text" name="origen"/> </li>
-    <li>Destino: <input id="destino" type="text" name="destino" /> </li>
-    <li>Sexo: <input type="text" name="sexo" /> </li>
-    <li>Fecha: <input type="text" name="fecha" /> </li>
-    <li>Twitt: <input type="text" name="twitt" /> </li>
-    <li>Profesion: <input type="text" name="profesion" /> </li>
+    <li>Origen: <input id="origen" type="text" name="origen"/> <span id="output1"> </span>
+ </li>
+    <li>Destino: <input id="destino" type="text" name="destino" /> <span id="output2"> </span> </li>
+    <li>Fecha: <select name="fecha">
+                    <option value="2007">2007</li>
+                    <option value="2008">2008</li>
+                    <option value="2009">2009</li>
+                    <option value="2010">2010</li>
+                    <option value="2011">2011</li>
+                    <option value="2012">2012</li>
+                    <option value="2013">2013</li>
+                </select>
+    <li>Profesion: <select name="profesion">
+                    <option value="sociales">Ciencias Sociales y Jurídicas: derecho, económicas, empresariales, turismo,...</option>
+                    <option value="artes">Artes: Bellas artes, diseño, artes performativas, cine,...</option>
+                    <option value="ingenierias">Ingenierías y arquitectura: informática, telecomunicaciones,...</option>
+                    <option value="salud">Ciencias de la salud: Medicina, enfermería, veterinaria, psicología,...</option>
+                    <option value="humanidades">Humanidades: filosofía, filología, antropología, periodismo,...</option>
+                    <option value="ciencias">Ciencias: física, matemáticas, biológicas,...</option>
+                    <option value="otras">Otras,...</option>
+                   </select>
+        <li id = "mensaje"> Mensaje: <input type="text" name="mensaje" /> </li>
+    </li>
     <li><input type="submit" value="Submit Comment" /> </li>
     </ul>
+    <div id="result"> <div>
 </form>
-<div id="output1">A</div>
-<div id="output2">B</div>
 <script>
 
-function showAddress(location) {
+function showAddress(location, target) {
   var str = "";
+  var inSpain = -1;
+  if(location == "") return;
   geocoder = new google.maps.Geocoder();
   if (geocoder) {
     geocoder.geocode( { 'address': location, 'region' : 'es'}, function(results, status) {
@@ -64,33 +82,27 @@ function showAddress(location) {
         if (status != google.maps.GeocoderStatus.ZERO_RESULTS) {
             var latlng = new google.maps.LatLng(results[0].geometry.location.lat(), results[0].geometry.location.lng() );
             str = results[0].formatted_address;
-            str += "<br><strong>Lat:</strong> "+ parseInt(latlng.lat() * 10);
-            str += "<br><strong>Lng:</strong> "+ parseInt(latlng.lng() * 10);
-
-            var inSpain = results[0].formatted_address.indexOf("Spain") != -1;
-            if(!inSpain)
-                str += "<br><b>ERROR: La ciudad origen no está en España</b>\n";
-            else
-                str += "<br><b>ERROR: La ciudad destino está en España</b>\n";
-            
-            
+            inSpain = results[0].formatted_address.indexOf("Spain") != -1;
+            if(inSpain) str+= " sí está en España. ";
+            else str+= " no está en España. "
+            str += " <strong>Lat:</strong> "+ parseInt(latlng.lat() * 10);
+            str += " <strong>Lng:</strong> "+ parseInt(latlng.lng() * 10);
         } else {
           str = "No hay resultados";
         }
       } else {
         str = "Error en geolocalización: " + status;
       }
+      target.html(str)
     });
-  }
-  console.log(str);
-}
 
+  }
+}
 $('#origen').blur(function() {
-    showAddress($('#origen').val());
+        showAddress($('#origen').val(), $('#output1'));
 });
 $('#destino').blur(function() {
-    showAddress($('#destino').val());
-    
+        showAddress($('#destino').val(), $('#output2'));
 });
 </script>
 </body>
