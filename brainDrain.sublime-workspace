@@ -1,0 +1,1129 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"op",
+				"option	Tag"
+			],
+			[
+				"destino",
+				"destino"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"hot",
+				"hotspot"
+			],
+			[
+				"game",
+				"gameScore"
+			],
+			[
+				"marg",
+				"margin-right"
+			],
+			[
+				"mat",
+				"match"
+			],
+			[
+				"is",
+				"isTooltip"
+			],
+			[
+				"t",
+				"target"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"To",
+				"tooltip"
+			],
+			[
+				"u",
+				"update"
+			],
+			[
+				"on",
+				"onMousemove"
+			],
+			[
+				"point",
+				"pointCount"
+			],
+			[
+				"sets",
+				"sets"
+			],
+			[
+				"mou",
+				"mouseenter"
+			],
+			[
+				"bo",
+				"body"
+			],
+			[
+				"pre",
+				"prevTokens"
+			],
+			[
+				"poi",
+				"points"
+			],
+			[
+				"poin",
+				"point"
+			],
+			[
+				"data",
+				"data"
+			],
+			[
+				"set",
+				"setScore"
+			],
+			[
+				"ga",
+				"gameScore"
+			],
+			[
+				"to",
+				"tooltip"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"obje",
+				"object3D"
+			],
+			[
+				"hots",
+				"hotspotView"
+			],
+			[
+				"padd",
+				"padding-left"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"paddin",
+				"padding"
+			],
+			[
+				"player",
+				"player-wrap"
+			],
+			[
+				"won",
+				"wonPlayer2"
+			],
+			[
+				"gam",
+				"gameNode"
+			],
+			[
+				"sc",
+				"score"
+			],
+			[
+				"play",
+				"player"
+			],
+			[
+				"color",
+				"color1"
+			],
+			[
+				"na",
+				"name1"
+			],
+			[
+				"name",
+				"namePlayer1"
+			],
+			[
+				"marin",
+				"margin-top"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"backge",
+				"background-size"
+			],
+			[
+				"defa",
+				"DEFAULT_LOW_EDGE"
+			],
+			[
+				"Defa",
+				"DEFAULT_SCALE"
+			],
+			[
+				"borde",
+				"border-radius"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"backgroun",
+				"background-color"
+			],
+			[
+				"sectio",
+				"sections"
+			],
+			[
+				"clear",
+				"clearTimeline"
+			],
+			[
+				"roo",
+				"rootNode"
+			],
+			[
+				"rot",
+				"rootNode"
+			],
+			[
+				"chi",
+				"children"
+			],
+			[
+				"camera",
+				"cameraMouseControl"
+			],
+			[
+				"dis",
+				"disable"
+			],
+			[
+				"match",
+				"matchId"
+			],
+			[
+				"lock",
+				"lockMenu"
+			],
+			[
+				"show",
+				"showMatches"
+			],
+			[
+				"defaul",
+				"defaultPercent"
+			],
+			[
+				"sli",
+				"sliders"
+			],
+			[
+				"came",
+				"cameraMouseControl"
+			],
+			[
+				"Pla",
+				"Player2"
+			],
+			[
+				"Player",
+				"Player1"
+			],
+			[
+				"showtim",
+				"showTimelineWrap"
+			],
+			[
+				"rende",
+				"renderIsActive"
+			],
+			[
+				"pla",
+				"player"
+			],
+			[
+				"des",
+				"destroy"
+			],
+			[
+				"ob",
+				"object3D"
+			],
+			[
+				"showMa",
+				"showMatchNavigation"
+			],
+			[
+				"scrol",
+				"scrollTop"
+			],
+			[
+				"tim",
+				"timeline"
+			],
+			[
+				"enable",
+				"enableNavigationFolding"
+			],
+			[
+				"ena",
+				"enableTimelineFolding"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"do",
+				"document"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"cons",
+				"console"
+			],
+			[
+				"matc",
+				"matchNav"
+			],
+			[
+				"ad",
+				"addClass"
+			],
+			[
+				"slider",
+				"sliders"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"clic",
+				"click"
+			],
+			[
+				"border",
+				"border-left"
+			],
+			[
+				"layer",
+				"layer3DInteractive"
+			],
+			[
+				"close",
+				"closeBtn"
+			],
+			[
+				"load",
+				"loadVideo"
+			],
+			[
+				"brea",
+				"breadcrubms"
+			],
+			[
+				"get",
+				"getIndex"
+			],
+			[
+				"node",
+				"nodeIndex"
+			],
+			[
+				"selec",
+				"selectedSet"
+			],
+			[
+				"DE",
+				"DEFAULT_OPACITY"
+			],
+			[
+				"mo",
+				"model"
+			],
+			[
+				"margi",
+				"margin-left"
+			],
+			[
+				"border-co",
+				"border-color"
+			],
+			[
+				"ma",
+				"margin-bottom"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"Zo",
+				"SliderZoom"
+			],
+			[
+				"l",
+				"length"
+			],
+			[
+				"bre",
+				"breadcrubms"
+			],
+			[
+				"app",
+				"append"
+			],
+			[
+				"bread",
+				"breadcrubm"
+			],
+			[
+				"update",
+				"updateBreadcrubs"
+			],
+			[
+				"hov",
+				"HoverControls"
+			],
+			[
+				"Three",
+				"THREE"
+			],
+			[
+				"change",
+				"changeSliderPercent"
+			],
+			[
+				"la",
+				"layer3DGL"
+			],
+			[
+				"Colr",
+				"Colors"
+			],
+			[
+				"slide",
+				"slider"
+			],
+			[
+				"nam",
+				"nameWidth"
+			],
+			[
+				"paddi",
+				"padding-top"
+			],
+			[
+				"backgrou",
+				"background-color"
+			],
+			[
+				"co",
+				"console"
+			],
+			[
+				"padding",
+				"padding-left"
+			],
+			[
+				"con",
+				"content"
+			],
+			[
+				"spee",
+				"speedScale"
+			],
+			[
+				"toa",
+				"totalLength_match"
+			],
+			[
+				"total",
+				"totalDistance"
+			],
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"chil",
+				"children"
+			],
+			[
+				"margin-",
+				"margin-left"
+			],
+			[
+				"h",
+				"html"
+			],
+			[
+				"dom",
+				"domElement"
+			],
+			[
+				"bottom",
+				"bottomBar"
+			],
+			[
+				"time",
+				"timeline"
+			],
+			[
+				"lines",
+				"linesLength"
+			],
+			[
+				"prev",
+				"prevTokens"
+			],
+			[
+				"onmo",
+				"onMouseout"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "form.html",
+			"settings":
+			{
+				"buffer_size": 6589,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "backend/generarJSON.py",
+			"settings":
+			{
+				"buffer_size": 842,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "backend/insert.php",
+			"settings":
+			{
+				"buffer_size": 911,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "backend/createDB.py",
+			"settings":
+			{
+				"buffer_size": 507,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/Processing/Processing.sublime-build",
+	"command_palette":
+	{
+		"height": 267.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"r",
+				"JSLint: Run JSLint"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Remove Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Add Repository"
+			],
+			[
+				"html",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"js",
+				"Format: Javascript"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 122.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Applications/MAMP/htdocs/BrainDrain/backend/cron.txt",
+		"/Volumes/Macintosh HD/Users/miguel/Downloads/full/src/HoverControls.js",
+		"/Volumes/Macintosh HD/Users/miguel/Downloads/full/src/BottomBar.js",
+		"/Volumes/Macintosh HD/Users/miguel/Downloads/full/src/Slider.js",
+		"/Volumes/Macintosh HD/Users/miguel/Downloads/full/index.html",
+		"/Applications/MAMP/htdocs/full/index.html",
+		"/Desktop/marcador/D_M/D_M_set3_raw.csv",
+		"/Desktop/marcador/D_M/D_M_set1.csv",
+		"/Desktop/marcador/highlights",
+		"/Applications/MAMP/htdocs/coronaN/data/dm.json",
+		"/Applications/MAMP/htdocs/corona/css/style.css",
+		"/Applications/MAMP/htdocs/corona/src/BottomBar.js",
+		"/Applications/MAMP/htdocs/home (2)/index.html",
+		"/Applications/MAMP/htdocs/corona/index.html",
+		"/Applications/MAMP/htdocs/home/index.html",
+		"/Applications/MAMP/htdocs/coronaN/index.html",
+		"/Applications/MAMP/htdocs/corona/data/dm.json",
+		"/Applications/MAMP/htdocs/BrainDrain/geo.html",
+		"/Applications/MAMP/htdocs/BrainDrain/Interactive Globe  Small Arms Imports & Exports_files/camerastates.js.pagespeed.jm.b39AcRCSya.js",
+		"/Applications/MAMP/htdocs/BrainDrain/Interactive Globe  Small Arms Imports & Exports_files/canvg.js",
+		"/Applications/MAMP/htdocs/BrainDrain/Interactive Globe  Small Arms Imports & Exports_files/d3.v2.min.js",
+		"/Applications/MAMP/htdocs/BrainDrain/Interactive Globe  Small Arms Imports & Exports_files/dat.gui.min.js",
+		"/Applications/MAMP/htdocs/BrainDrain/Interactive Globe  Small Arms Imports & Exports_files/dataloading.js",
+		"/Applications/MAMP/htdocs/BrainDrain/Interactive Globe  Small Arms Imports & Exports_files/Detector.js",
+		"/Applications/MAMP/htdocs/BrainDrain/Interactive Globe  Small Arms Imports & Exports_files/visualize.js",
+		"/Applications/MAMP/htdocs/BrainDrain/Interactive Globe  Small Arms Imports & Exports_files/visualize_lines.js",
+		"/Applications/MAMP/htdocs/BrainDrain/Interactive Globe  Small Arms Imports & Exports_files/util.js.pagespeed.jm.f-yWyMkmoR.js",
+		"/Applications/MAMP/htdocs/BrainDrain/Interactive Globe  Small Arms Imports & Exports_files/ui.controls.js",
+		"/Applications/MAMP/htdocs/BrainDrain/Interactive Globe  Small Arms Imports & Exports_files/Tween.js",
+		"/Applications/MAMP/htdocs/BrainDrain/Interactive Globe  Small Arms Imports & Exports_files/THREEx.WindowResize.js",
+		"/Applications/MAMP/htdocs/BrainDrain/Interactive Globe  Small Arms Imports & Exports_files/THREEx.KeyboardState.js",
+		"/Applications/MAMP/htdocs/BrainDrain/Interactive Globe  Small Arms Imports & Exports_files/Three.js",
+		"/Applications/MAMP/htdocs/BrainDrain/Interactive Globe  Small Arms Imports & Exports_files/svgtoy.js",
+		"/Applications/MAMP/htdocs/BrainDrain/Interactive Globe  Small Arms Imports & Exports_files/Stats.js",
+		"/Applications/MAMP/htdocs/BrainDrain/Interactive Globe  Small Arms Imports & Exports_files/rgbcolor.js.pagespeed.jm.yLbRe26fuy.js",
+		"/Applications/MAMP/htdocs/BrainDrain/Interactive Globe  Small Arms Imports & Exports_files/markers.js",
+		"/Applications/MAMP/htdocs/corona/data/fn.json",
+		"/Desktop/marcador/F_N/F_N_set2.raw",
+		"/Applications/MAMP/htdocs/src/Model.js",
+		"/Applications/MAMP/htdocs/data/fn.json",
+		"/Applications/MAMP/htdocs/data/nd.json",
+		"/Desktop/marcador/D_F/raw2json.py",
+		"/Desktop/marcador/D_F/run.sh",
+		"/Desktop/marcador/D_F/D_F_set2.raw",
+		"/Desktop/marcador/D_F/D_F_set1.raw",
+		"/Applications/MAMP/htdocs/data/dm.json",
+		"/Desktop/marcador/D_M/csv2json.py",
+		"/Desktop/marcador 2/D_F/D_F_set1.raw",
+		"/Desktop/marcador 2/D_F/D_F_set2.raw",
+		"/Desktop/marcador/D_M/raw2csv.py",
+		"/Desktop/marcador/D_M/D_M_set1_c4d.csv",
+		"/Applications/MAMP/htdocs/data/dm2.json",
+		"/Desktop/marcador/D_M/s",
+		"/Volumes/Macintosh HD/Users/miguel/Downloads/corona-atp-v2-merge 2/data/dm.json",
+		"/Desktop/marcador/F_N/F_N_set3.raw.csv",
+		"/Volumes/Macintosh HD/Users/miguel/Downloads/corona-atp-v2-merge 2/data/fn.json",
+		"/Desktop/marcador/F_N/csv2json.py",
+		"/Desktop/marcador/D_M/D_M_set1.raw",
+		"/Desktop/marcador/D_M/D_M_set1_c4d.txt",
+		"/Desktop/marcador/D_M/D_M_set1.raw.save",
+		"/Desktop/marcador/D_M/D_M_set1_c.raw",
+		"/Desktop/fn3.csv",
+		"/Volumes/Macintosh HD/Users/miguel/Downloads/data/fn.json",
+		"/Desktop/marcador/F_N/F_N_set3.3.raw.csv",
+		"/Desktop/marcador/F_N/F_N_set3.2.csv",
+		"/Desktop/marcador/F_N/SAVED/F_N_set3 copy.raw",
+		"/Applications/MAMP/htdocs/CAMBIOS EN VELOCIDAD DE LAS DASHED LINES/Model.js",
+		"/Applications/MAMP/htdocs/CAMBIOS EN VELOCIDAD DE LAS DASHED LINES/ViewLineDashed.js",
+		"/Desktop/marcador/correctorParabolas/D_F_set1.raw",
+		"/Desktop/marcador/correctorParabolas/D_F_set2.raw",
+		"/Desktop/marcador/correctorParabolas/commit.py",
+		"/Desktop/marcador/correctorParabolas/F_N_set3.raw",
+		"/Desktop/marcador/F_N/F_N_set3.raw",
+		"/Desktop/marcador/correctorParabolas/F_N_set2.raw",
+		"/Desktop/marcador/correctorParabolas/F_N_set1.raw",
+		"/Desktop/marcador/F_N/F_N_set1.raw",
+		"/Desktop/marcador/D_M/run.sh",
+		"/Desktop/marcador/F_N/raw2json.py",
+		"/Desktop/marcador/F_N/raw2rawMeta.py",
+		"/Applications/MAMP/htdocs/src/ViewLineDashed.js",
+		"/Desktop/marcador/F_N/run.sh",
+		"/Applications/MAMP/htdocs/OLD/index.html",
+		"/Applications/MAMP/htdocs/index.html",
+		"/Applications/MAMP/htdocs/OLD/src/Score.js",
+		"/Applications/MAMP/htdocs/src/ViewInteractive.js",
+		"/Applications/MAMP/htdocs/src/Data.js",
+		"/Desktop/marcador/F_N/F_N_set1_meta.raw",
+		"/Applications/MAMP/htdocs/src/Slider.js",
+		"/Desktop/marcador/F_N/set_FN_1.json",
+		"/Desktop/marcador/F_N/raw2js.py",
+		"/Applications/MAMP/htdocs/src/Score.js",
+		"/Desktop/corona-atp-v2/index.html",
+		"/Applications/MAMP/htdocs/src/ViewGL.js",
+		"/Applications/MAMP/htdocs/src/Utils.js",
+		"/Applications/MAMP/htdocs/src/SliderZoom.js",
+		"/Desktop/corona-atp-v2/css/style.css",
+		"/Applications/MAMP/htdocs/src/CameraMouseControl.js",
+		"/Applications/MAMP/htdocs/src/CameraControlsGui_old.js",
+		"/Applications/MAMP/htdocs/src/BottomBar.js",
+		"/Applications/MAMP/htdocs/src/App.js",
+		"/Applications/MAMP/htdocs/src/HoverControls.js",
+		"/Desktop/corona-atp-v2/src/Model.js",
+		"/Applications/MAMP/htdocs/corona-atp/src/CameraMouseControl.js",
+		"/Applications/MAMP/htdocs/corona-atp/src/Score.js",
+		"/Applications/MAMP/htdocs/corona-atp/src/Slider.js",
+		"/Applications/MAMP/htdocs/corona-atp/src/Tooltip.js",
+		"/Applications/MAMP/htdocs/corona-atp/src/ViewInteractive.js",
+		"/Applications/MAMP/htdocs/corona-atp/src/HoverControls.js",
+		"/Applications/MAMP/htdocs/corona-atp/data/fn.json",
+		"/Applications/MAMP/htdocs/corona-atp/data/set_DF_1.js",
+		"/Applications/MAMP/htdocs/corona-atp/src/Data.js",
+		"/Applications/MAMP/htdocs/corona-atp/src/ViewLineDashed.js",
+		"/Applications/MAMP/htdocs/corona-atp/src/ViewGL.js",
+		"/Applications/MAMP/htdocs/corona-atp/making-of-borrar.jpg",
+		"/Applications/MAMP/htdocs/corona-atp/src/BottomBar.js",
+		"/Applications/MAMP/htdocs/corona-atp/src/SliderZoom.js",
+		"/Applications/MAMP/htdocs/corona-atp/data/dm.json",
+		"/Applications/MAMP/htdocs/corona-atp/data/nd.json",
+		"/Applications/MAMP/htdocs/corona-atp/data/dm.js",
+		"/Applications/MAMP/htdocs/corona-atp/data/fn.js",
+		"/Applications/MAMP/htdocs/corona-atp/data/nd.js",
+		"/Applications/MAMP/htdocs/corona-atp/src/Timeline.js",
+		"/Applications/MAMP/htdocs/corona-atp/data/set_FN_3.js",
+		"/Applications/MAMP/htdocs/corona-atp/data/set_FN_2.js",
+		"/Applications/MAMP/htdocs/corona-atp/data/set_FN_1.js",
+		"/Applications/MAMP/htdocs/corona-atp/data/df.js",
+		"/Applications/MAMP/htdocs/corona-atp/data/set_DM_3.js",
+		"/Applications/MAMP/htdocs/corona-atp/data/set_DM_2.js"
+	],
+	"find":
+	{
+		"height": 62.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"buildSlider",
+			"name",
+			"Tennis",
+			"buildS",
+			"buildSl",
+			"buildS",
+			"buildSl",
+			"animate",
+			"fade",
+			"fadeIn",
+			"window",
+			"home",
+			"intro",
+			" makingO",
+			"a:",
+			"homeB",
+			"menu",
+			"intro",
+			"home",
+			"logo",
+			"read",
+			"logo",
+			"ready",
+			"5 6 2 2",
+			"6 6 1 4",
+			"4 4 2 3",
+			"pF",
+			"475",
+			"4750",
+			"969",
+			"1 3 0 1",
+			"4 4 2 2",
+			"4 4 2 3",
+			"pFB",
+			"p",
+			"6 6 1 3",
+			"pFB9_2iwn0g",
+			"facebo",
+			"faceb",
+			"1,4,3,2,3",
+			"kVqdcaYnmnk",
+			"10274",
+			"kVqdcaYnmnk",
+			"108000",
+			"kVqdcaYnmnk",
+			"pFB9_2iwn0g",
+			"kVqdcaYnmnk",
+			"pFB9_2iwn0g",
+			"kVqdcaYnmnk",
+			"player",
+			"player.de",
+			"getAd",
+			"fxAudio",
+			"console.log",
+			"layer3DInter",
+			"layer3D",
+			"document.crea",
+			"ready",
+			"document",
+			"isNewP",
+			"serv",
+			"lastSe",
+			"service",
+			"sD73Pptdvbo",
+			"youtub",
+			"DMYf0bZ5rME",
+			"print",
+			"^M",
+			"u",
+			" ",
+			"uC",
+			" ",
+			",",
+			"ucP",
+			" ",
+			"u",
+			"1 3 0 2",
+			"1 3 0 2 ",
+			"2308",
+			"uC",
+			"uc",
+			"u",
+			"pointNode",
+			"speed",
+			"sp",
+			"speed",
+			"hu",
+			"start",
+			"pla",
+			"u",
+			"0 1 2 1",
+			"5 2 0 3",
+			"1 1 1 0",
+			"1 1 0 0 ",
+			"1 0 0 2 ",
+			"selectedNode",
+			"selectedHotspot",
+			"selectedNode",
+			"vector",
+			"clone",
+			"selectedSet",
+			"selected",
+			"hotspots",
+			"selectedNode",
+			"lengthSq",
+			"selectedNode",
+			"updateHot",
+			"hotspo",
+			"updateHot",
+			"hotspots",
+			"push",
+			"hotspot",
+			"hotspo",
+			"hotSpo",
+			"youtube",
+			"updateH",
+			"youtube",
+			"updateH",
+			"you",
+			"updateHo",
+			"hotspo",
+			"youtub",
+			"updateHo",
+			"logINf",
+			"yout",
+			"uC",
+			"pointNode",
+			"48 250 "
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"pFB9_2iwn0g",
+			",",
+			"\n,",
+			"\n",
+			"\\n",
+			",",
+			"",
+			"buildTimelineSliders",
+			"parseSetData",
+			"cameraHover",
+			"label",
+			"1 2 0 0,",
+			"slider",
+			"$focusDiv",
+			"dataTree",
+			"bounceView",
+			"setView",
+			"campo_opacity",
+			"infoBar",
+			"Launch",
+			"Oswald",
+			"thumb_loading.gif",
+			"http://mimetikxs.com/assets/thumb_loading.jpg",
+			"http://mimetikxs.com/assets/Screen_shot_2.jpg\"",
+			"div",
+			"Math.random",
+			"Tentacle",
+			"tentacle",
+			"tentacles",
+			"this.numNodes",
+			"kxs",
+			"angleOffset",
+			".position"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "form.html",
+					"settings":
+					{
+						"buffer_size": 6589,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2064,
+								2064
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1663.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "backend/generarJSON.py",
+					"settings":
+					{
+						"buffer_size": 842,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								530,
+								506
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 46.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "backend/insert.php",
+					"settings":
+					{
+						"buffer_size": 911,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								590,
+								590
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "backend/createDB.py",
+					"settings":
+					{
+						"buffer_size": 507,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								304,
+								304
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 30.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 112.0
+	},
+	"output.jslint_result_view":
+	{
+		"height": 112.0
+	},
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"src/Tentacle_v2.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 182.0,
+	"status_bar_visible": true
+}

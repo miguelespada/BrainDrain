@@ -31,6 +31,7 @@ with con:
     cur.execute("SELECT * FROM Brains")
     rows = cur.fetchall()
     f = open("tmp.json", 'w')
+
     f.write(json.dumps(rows))
     f.close()
 
