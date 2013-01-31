@@ -1,6 +1,6 @@
 
 <html> 
- <meta name="brain drain"  content="text/html;" http-equiv="content-type" charset="utf-8">
+ <meta name="tipo_contenido"  content="text/html;" http-equiv="content-type" charset="utf-8">
 <head> 
     <script src="lib/jquery-1.8.0.min.js"></script> 
     <script src="lib/jquery.form.js"></script> 
@@ -182,13 +182,13 @@ $('#origen').blur(function() {
 $('#destino').blur(function() {
         checkAddress($('#destino').val(), destino);
 });
-$('#profesion').focus(function(){
+$('#profesion').change(function(){
     $("#profesion option[value='']").remove();
 })
-$('#year').focus(function(){
+$('#year').change(function(){
     $("#year option[value='']").remove();
 })
-$('#month').focus(function(){
+$('#month').change(function(){
     $("#month option[value='']").remove();
 })
 
