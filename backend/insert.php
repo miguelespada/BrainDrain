@@ -19,6 +19,7 @@
 	$values = "('$ip', '$origen', '$latO', '$lonO', '$destino', '$latD', '$lonD', 
 				'$year', '$month', '$profesion', '$mensaje', ".time().")";
 	
+	echo '<br>[PHP] fields: '.$fields;
 	echo '<br>[PHP] values: '.$values;
 	$query = "INSERT INTO Brains ".$fields."VALUES ". $values;
 	

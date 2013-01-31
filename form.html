@@ -10,14 +10,14 @@
         var userHasSubmited = false;
         $(document).ready(function() { 
 
-         var options = { 
-            target:        '#result',   // target element(s) to be updated with server response 
-            beforeSubmit:  prevForm,  // pre-submit callback 
-            success:  afterForm  // post-submit callback 
-         }; 
+              var options = { 
+                    target:        '#result',   // target element(s) to be updated with server response 
+                    beforeSubmit:  prevForm,  // pre-submit callback 
+                    success:  afterForm  // post-submit callback 
+             }; 
 
-         $('#myForm').ajaxForm(options); 
-    }); 
+          $('#myForm').ajaxForm(options); 
+         }); 
  
 // pre-submit callback 
 function prevForm(formData, jqForm, options) { 
@@ -25,8 +25,6 @@ function prevForm(formData, jqForm, options) {
     //(1) Check form fields.
     //(2) Insert data in the local db
     //(3) return true to async write in the remote db
-
-    console.log("checking form... ")
     var err = "";
     var d = new Date();
     if(userHasSubmited) 
@@ -76,10 +74,10 @@ function afterForm(responseText, statusText, xhr, $form)  {
         <span id="output2"> </span> 
         <li>Mes: <select id="month" name="month"   required>
                     <option value="" >
-                    <option value=1>Enero
+                    <option value=1 selected>Enero
                     <option value=2>Febrero
                     <option value=3>Marzo
-                    <option value=4 selected>Abril
+                    <option value=4>Abril
                     <option value=5>Mayo
                     <option value=6>Junio
                     <option value=7>Julio
@@ -110,7 +108,7 @@ function afterForm(responseText, statusText, xhr, $form)  {
                     <option value="otras">Otras,...</option>
                    </select>
         <li > Mensaje: <span id = "msgHead"> </span> <input id = "mensaje" type="text" name="mensaje" /> 
-    <li><input id="submit" type="submit" value="Submit Comment" /> </li>
+    <li><input id="submit" type="submit" value="Submit Brain" /> </li>
     </ul>
     <div id="result"> <div>
 </form>
@@ -154,13 +152,14 @@ function checkAddress(location, target) {
     geocoder.geocode( { 'address': location, 'region' : 'es'}, function(results, status) {
       if (status == google.maps.GeocoderStatus.OK) {
         if (status != google.maps.GeocoderStatus.ZERO_RESULTS) {
-            var latlng = new google.maps.LatLng(results[0].geometry.location.lat(), results[0].geometry.location.lng() );
+            var latlng = new google.maps.LatLng(results[0].geometry.location.lat(), 
+                                                results[0].geometry.location.lng() );
             target.name = location;
             target.address = results[0].formatted_address;
             target.inSpain = results[0].formatted_address.indexOf("Spain") != -1;
             target.lat.attr("value", parseInt(latlng.lat() * 10));
             target.lon.attr("value", parseInt(latlng.lng() * 10));
-            target.target.html(target.address);
+            target.target.html("[GOOGLE] " + target.address);
             createMsg();
         } else {
           console.log("No hay resultados");
@@ -175,11 +174,19 @@ function checkAddress(location, target) {
 
 $('#origen').blur(function() {
         checkAddress($('#origen').val(), origen);
-
 });
 $('#destino').blur(function() {
         checkAddress($('#destino').val(), destino);
 });
+$('#profesion').focus(function(){
+    $("#profesion option[value='']").remove();
+})
+$('#year').focus(function(){
+    $("#year option[value='']").remove();
+})
+$('#month').focus(function(){
+    $("#month option[value='']").remove();
+})
 
 </script>
 </body>
