@@ -523,7 +523,7 @@
 			"file": "form.html",
 			"settings":
 			{
-				"buffer_size": 6589,
+				"buffer_size": 6643,
 				"line_ending": "Unix"
 			}
 		},
@@ -531,7 +531,7 @@
 			"file": "backend/generarJSON.py",
 			"settings":
 			{
-				"buffer_size": 842,
+				"buffer_size": 891,
 				"line_ending": "Unix"
 			}
 		},
@@ -539,7 +539,7 @@
 			"file": "backend/insert.php",
 			"settings":
 			{
-				"buffer_size": 911,
+				"buffer_size": 942,
 				"line_ending": "Unix"
 			}
 		},
@@ -616,6 +616,7 @@
 	},
 	"file_history":
 	[
+		"/Applications/MAMP/htdocs/BrainDrain/backend/.gitnore",
 		"/Applications/MAMP/htdocs/BrainDrain/backend/cron.txt",
 		"/Volumes/Macintosh HD/Users/miguel/Downloads/full/src/HoverControls.js",
 		"/Volumes/Macintosh HD/Users/miguel/Downloads/full/src/BottomBar.js",
@@ -742,8 +743,7 @@
 		"/Applications/MAMP/htdocs/corona-atp/data/set_FN_2.js",
 		"/Applications/MAMP/htdocs/corona-atp/data/set_FN_1.js",
 		"/Applications/MAMP/htdocs/corona-atp/data/df.js",
-		"/Applications/MAMP/htdocs/corona-atp/data/set_DM_3.js",
-		"/Applications/MAMP/htdocs/corona-atp/data/set_DM_2.js"
+		"/Applications/MAMP/htdocs/corona-atp/data/set_DM_3.js"
 	],
 	"find":
 	{
@@ -762,6 +762,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Date",
 			"buildSlider",
 			"name",
 			"Tennis",
@@ -888,8 +889,7 @@
 			"logINf",
 			"yout",
 			"uC",
-			"pointNode",
-			"48 250 "
+			"pointNode"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -948,15 +948,15 @@
 					"file": "form.html",
 					"settings":
 					{
-						"buffer_size": 6589,
+						"buffer_size": 6643,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2064,
-								2064
+								6402,
+								6402
 							]
 						],
 						"settings":
@@ -966,7 +966,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1663.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -976,15 +976,15 @@
 					"file": "backend/generarJSON.py",
 					"settings":
 					{
-						"buffer_size": 842,
+						"buffer_size": 891,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								530,
-								506
+								637,
+								637
 							]
 						],
 						"settings":
@@ -994,7 +994,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 46.0,
+						"translation.y": 80.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1004,15 +1004,15 @@
 					"file": "backend/insert.php",
 					"settings":
 					{
-						"buffer_size": 911,
+						"buffer_size": 942,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								590,
-								590
+								641,
+								641
 							]
 						],
 						"settings":
