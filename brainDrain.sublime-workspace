@@ -520,10 +520,45 @@
 	"buffers":
 	[
 		{
+			"file": "geometries.html",
+			"settings":
+			{
+				"buffer_size": 6095,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "tmp/world.svg",
+			"settings":
+			{
+				"buffer_size": 1654809,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "form.html",
 			"settings":
 			{
 				"buffer_size": 6643,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Applications/MAMP/htdocs/corona/index.html",
+			"settings":
+			{
+				"buffer_size": 28560,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "\n\n// draw!",
+			"file": "example.js",
+			"file_size": 1483,
+			"file_write_time": 1359802286000000,
+			"settings":
+			{
+				"buffer_size": 10,
 				"line_ending": "Unix"
 			}
 		},
@@ -539,7 +574,15 @@
 			"file": "backend/insert.php",
 			"settings":
 			{
-				"buffer_size": 942,
+				"buffer_size": 998,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Desktop/BlankMap-World6.svg",
+			"settings":
+			{
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -616,6 +659,10 @@
 	},
 	"file_history":
 	[
+		"/Applications/MAMP/htdocs/BrainDrain/testWEBGL.html",
+		"/Desktop/world.svg",
+		"/Applications/MAMP/htdocs/BrainDrain/lib/canvg.js",
+		"/Applications/MAMP/htdocs/BrainDrain/brainDrain.sublime-project",
 		"/Applications/MAMP/htdocs/BrainDrain/backend/.gitnore",
 		"/Applications/MAMP/htdocs/BrainDrain/backend/cron.txt",
 		"/Volumes/Macintosh HD/Users/miguel/Downloads/full/src/HoverControls.js",
@@ -739,11 +786,7 @@
 		"/Applications/MAMP/htdocs/corona-atp/data/fn.js",
 		"/Applications/MAMP/htdocs/corona-atp/data/nd.js",
 		"/Applications/MAMP/htdocs/corona-atp/src/Timeline.js",
-		"/Applications/MAMP/htdocs/corona-atp/data/set_FN_3.js",
-		"/Applications/MAMP/htdocs/corona-atp/data/set_FN_2.js",
-		"/Applications/MAMP/htdocs/corona-atp/data/set_FN_1.js",
-		"/Applications/MAMP/htdocs/corona-atp/data/df.js",
-		"/Applications/MAMP/htdocs/corona-atp/data/set_DM_3.js"
+		"/Applications/MAMP/htdocs/corona-atp/data/set_FN_3.js"
 	],
 	"find":
 	{
@@ -762,6 +805,20 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"z",
+			"camer",
+			"addSh",
+			"addSha",
+			"three",
+			"shape",
+			"requestA",
+			"\"es\"",
+			"request",
+			"animate",
+			"thre",
+			" es ",
+			"es",
+			"'es'",
 			"Date",
 			"buildSlider",
 			"name",
@@ -875,21 +932,7 @@
 			"hotspots",
 			"push",
 			"hotspot",
-			"hotspo",
-			"hotSpo",
-			"youtube",
-			"updateH",
-			"youtube",
-			"updateH",
-			"you",
-			"updateHo",
-			"hotspo",
-			"youtub",
-			"updateHo",
-			"logINf",
-			"yout",
-			"uC",
-			"pointNode"
+			"hotspo"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -940,11 +983,66 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
+					"file": "geometries.html",
+					"settings":
+					{
+						"buffer_size": 6095,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1290,
+								1290
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 519.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "tmp/world.svg",
+					"settings":
+					{
+						"buffer_size": 1654809,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1178025,
+								1178026
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 231571.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
 					"file": "form.html",
 					"settings":
 					{
@@ -955,8 +1053,8 @@
 						"selection":
 						[
 							[
-								6402,
-								6402
+								103,
+								164
 							]
 						],
 						"settings":
@@ -972,7 +1070,61 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
+					"buffer": 3,
+					"file": "/Applications/MAMP/htdocs/corona/index.html",
+					"settings":
+					{
+						"buffer_size": 28560,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								19650,
+								19683
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 11982.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "example.js",
+					"settings":
+					{
+						"buffer_size": 10,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10,
+								10
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
 					"file": "backend/generarJSON.py",
 					"settings":
 					{
@@ -994,25 +1146,25 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 80.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 6,
 					"file": "backend/insert.php",
 					"settings":
 					{
-						"buffer_size": 942,
+						"buffer_size": 998,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								641,
-								641
+								858,
+								858
 							]
 						],
 						"settings":
@@ -1027,7 +1179,35 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 7,
+					"file": "/Desktop/BlankMap-World6.svg",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 33348.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
 					"file": "backend/createDB.py",
 					"settings":
 					{
@@ -1045,7 +1225,9 @@
 						"settings":
 						{
 							"auto_name": "",
-							"syntax": "Packages/Python/Python.tmLanguage"
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
