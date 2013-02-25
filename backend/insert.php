@@ -10,6 +10,7 @@
 	$year = $_POST["year"];
 	$profesion = $_POST["profesion"];
 	$mensaje = $_POST["mensaje"];
+	$email = $_POST["email"];
 
 	$ip=$_SERVER['REMOTE_ADDR']; 
 
